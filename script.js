@@ -134,8 +134,15 @@ for (let index = 0; index < animalsReverse.length; index++) {
 }
 console.log(animalsReverse);
 
+// Гуд, тільки мало бути огорнуте в окрему функцію
+
 
 
 // ● Функція яка перетворює класи елементів списку animals 
 // і додає до цих елементів data-* атрибути з назвою класу який був прибраний. 
 // Наприклад: <li class="wild dangerous">Tiger</li> => <li data-wild data-dangerous>Tiger</li>
+
+// не виконано, але то і так зрозуміло)
+
+
+// В цілому - зауважень більше нема, хороший зрозумілий код
