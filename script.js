@@ -66,6 +66,7 @@ responseText = patternText.test(stringcomment.text);
 
 
 
+//Завдання не працює, коменти не додаються, дані валідуються неправильно
 
 
 
