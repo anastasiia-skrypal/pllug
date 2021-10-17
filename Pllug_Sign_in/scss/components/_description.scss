@@ -1,0 +1,74 @@
+.container_description {
+	background: url(../img/background.png) top no-repeat;
+	background-size: cover;
+	color: $white01;
+	width: 50%;
+
+	@include respond-to(mobile) {
+		width: 100%;				
+	}
+	
+}
+
+.description {
+	&_title {
+		font-family: Helvetica-Neue;
+		font-size: 50px;
+		span {
+			color: $red01;
+		}
+
+		@include respond-to(tablet) {
+			font-size: 40px;						
+		}
+
+		@include respond-to(mobile) {
+			font-size: 30px;				
+		}
+	}	
+
+	&_subtitle {
+		font-family: Poppins;
+		font-weight: 500;
+		font-size: 24px;
+		margin-top: 115px;
+
+		@include respond-to(tablet) {
+			font-size: 20px;
+			margin-top: 50px;						
+		}
+
+		@include respond-to(mobile) {
+			font-size: 20px;
+			margin-top: 30px;			
+		}
+	}
+
+	&_article {
+		font-family: Poppins;
+		font-weight: 400;
+		font-size: 16px;
+		margin-top: 25px;
+
+		@include respond-to(tablet) {
+			font-size: 14px;						
+		}
+
+		@include respond-to(mobile) {
+			font-size: 14px;		
+		}
+	}
+}
+
+.description_inner {
+	padding: 90px;
+
+	@include respond-to(tablet) {
+		padding: 60px;					
+	}
+
+	@include respond-to(mobile) {
+		padding: 50px;			
+	}
+}
+
