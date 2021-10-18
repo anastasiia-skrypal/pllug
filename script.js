@@ -2,6 +2,10 @@
 // - Провести заміри продуктивності для звичайного об’єкта, 
 // об’єкта без прототипу та MAP. 
 
+/**
+ * Непогано. Було б добре якби ви зберегли в коменти результати тестуваання.
+ */
+
 let obj = new Object();
 let objWithoutProt = Object.create(null);
 let map = new Map();
@@ -64,26 +68,32 @@ console.timeEnd("Get key");
 // - Написати функцію, яка приймає об’єкт у якості аргументу та 
 // повертає Map  з тими самими даними. Тобто просто перетворити об’єкт у Map.
 
+/**
+ * Не потрібно все ускладнювати.
+ * Функція не повинна знати про зовнішні зміни, якщо їй потрібна якась змінна, то передайте її аргументом.
+ */
 let fromObj = {"1": 1};
-console.log(fromObj);
+// console.log(fromObj);
 function objToMap (obj) {
-	return toMap = new Map(Object.entries(fromObj));
+	return new Map(Object.entries(obj));
 }
-objToMap(fromObj);
-console.log(toMap);
+console.log(objToMap(fromObj));
 
 // - Написати функцію, яка приймає Map у якості аргументу та 
 // повертає об’єкт з тими самими даними. 
 // Тобто просто перетворити Map у  об’єкт.
 
+/**
+ * Не потрібно все ускладнювати.
+ */
 let toObj = {};
 let fromMap = new Map();
 fromMap.set('1', 1);
 
 toObj = Object.fromEntries(fromMap.entries());
-console.log(toObj);
+// console.log(toObj);
 function mapToObj (map) {
-	return  toObj = Object.fromEntries(map.entries());
+	return Object.fromEntries(map.entries());
 }
-mapToObj(fromMap);
+console.log(mapToObj(fromMap));
 
